@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit - Woodinville Connect</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Woodinville Connect</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="events.html">Events</a>
+            <a href="submit.html" class="active">Submit</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <h1>Submit a Community Resource</h1>
+    <p>Help us grow our directory by sharing a valuable resource.</p>
+</section>
+
+<section class="form-section">
+    <form id="resourceForm">
+
+        <label for="orgName">Organization Name *</label>
+        <input type="text" id="orgName" required>
+
+        <label for="category">Category *</label>
+        <select id="category" required>
+            <option value="">Select a category</option>
+            <option>Food Assistance</option>
+            <option>Housing Support</option>
+            <option>Health Services</option>
+            <option>Youth Programs</option>
+            <option>Senior Services</option>
+            <option>Employment Support</option>
+            <option>Legal Aid</option>
+            <option>Volunteer Opportunities</option>
+        </select>
+
+        <label for="description">Description *</label>
+        <textarea id="description" rows="4" required></textarea>
+
+        <label for="address">Address *</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required>
+
+        <label for="website">Website</label>
+        <input type="url" id="website">
+
+        <label for="email">Contact Email *</label>
+        <input type="email" id="email" required>
+
+        <label for="importance">Why This Resource Matters *</label>
+        <textarea id="importance" rows="3" required></textarea>
+
+        <label for="logo">Upload Logo (Optional)</label>
+        <input type="file" id="logo" accept="image/*">
+
+        <button type="submit">Submit Resource</button>
+
+        <p id="successMessage" style="display:none; color:green; margin-top:15px;">
+            Thank you! Your submission has been received and will be reviewed.
+        </p>
+
+    </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Woodinville Connect | TSA Webmaster Competition</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
